@@ -1,3 +1,187 @@
-p {
-    font-family: 'Crimson Text', cursive;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+}
+
+h1 {
+    color: rgb(255, 198, 0);
+    text-align: center;
+    font-size: 110px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+h2 {
+    position: absolute;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    margin: 10px;
+}
+
+.card {
+    /* height: 100px; */
+    margin: 0 auto;
+}
+
+.flex-row {
+    margin-top: 600px;
+}
+
+.name {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    /* letter-spacing: 15px; */
+    margin-top: 50px;
+    padding: 10px;
+
+    letter-spacing: 15px;
+    -webkit-animation: myanim 2s;
+    animation: myanim 2s;
+}
+
+
+@-webkit-keyframes myanim {
+    0% {
+        letter-spacing: -5px;
+    }
+
+    100% {
+        letter-spacing: 15px;
+    }
+}
+
+@keyframes myanim {
+    0% {
+        letter-spacing: -5px;
+    }
+
+    100% {
+        letter-spacing: 15px;
+    }
+}
+
+#portfolio, #portfolio-home {
+    letter-spacing: 15px;
+    top: 10px;
+    left: 10px;
+    animation-name: portfolio-top-left;
+}
+
+@keyframes portfolio-top-left {
+
+    /* //this portion */
+    0% {
+        color: white;
+        top: -50px;
+
+    }
+
+    50% {
+        color: lightyellow;
+        top: 10px;
+
+    }
+
+    100% {
+        color: rgb(255, 198, 0);
+        top: 10px;
+
+    }
+}
+
+#contact, #contact-home {
+    letter-spacing: 15px;
+    top: 10px;
+    right: 10px;
+    animation-name: contact-top-right;
+}
+
+@keyframes contact-top-right {
+
+    /* //this portion */
+    0% {
+        color: white;
+        top: -50px;
+
+    }
+
+    50% {
+        color: lightyellow;
+        top: 10px;
+
+    }
+
+    100% {
+        color: rgb(255, 198, 0);
+        top: 10px;
+
+    }
+}
+
+#about, #about-home {
+    letter-spacing: 15px;
+    bottom: 10px;
+    left: 10px;
+    animation-name: about-bottom-left;
+
+}
+
+@keyframes about-bottom-left {
+
+    /* //this portion */
+    0% {
+        color: white;
+        bottom: -50px;
+    }
+
+    50% {
+        color: lightyellow;
+        bottom: 10px;
+    }
+
+    100% {
+        color: rgb(255, 198, 0);
+        bottom: 10px;
+
+    }
+}
+
+#social {
+    bottom: 10px;
+    right: 10px;
+    animation-name: social-bottom-right;
+
+}
+
+@keyframes social-bottom-right {
+
+    /* //this portion */
+    0% {
+        color: white;
+        bottom: -50px;
+    }
+
+    50% {
+        color: lightyellow;
+        bottom: 10px;
+    }
+
+    100% {
+        color: rgb(255, 198, 0);
+        bottom: 10px;
+
+    }
+}
+
+#hangman-game {
+    border: 2px solid white;
+    margin-top: 300px; 
+    text-align: center;
+    color: white;
+}
+
+#contact-form {
+    display: inline;
+    margin-top: 500px;
 }
